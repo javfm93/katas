@@ -28,8 +28,9 @@ class FindKthLargest {
       }
     }
     swap(nums, end, left);
+    if (left == nums.length - k) return;
     if (left > nums.length - k) {
-      quickSelect(nums, 0, left -1 );
+      quickSelect(nums, 0, left - 1 );
     }
     quickSelect(nums, left + 1, end);
   }

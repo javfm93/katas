@@ -50,15 +50,14 @@ class FindKthLargestTest {
 
     assertEquals(10, result);
   }
-
   @Test
   void shouldReturnTheKthLargest() {
     var findKthLargest = new FindKthLargest();
-    var input = new int[] {3,2,1,5,6,4};
+    var input = new int[] {8,9,4,1,2,3};
     var k = 2;
 
     var result = findKthLargest.execute(input, k);
 
-    assertEquals(5, result);
+    assertEquals(8, result);
   }
 }
